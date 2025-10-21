@@ -1,0 +1,131 @@
+<!doctype html> <!-- Indica al navegador que el documento usa HTML5 -->
+<html lang="es"> <!-- Idioma del documento: español -->
+<head>
+  <meta charset="utf-8"> <!-- Codificación para admitir caracteres latinos -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Hace el sitio responsive -->
+  <title>Inclusión Digital – Proyecto</title> <!-- Título de la pestaña -->
+  <meta name="description" content="Recursos de ofimática e informática aplicados al soporte técnico."> <!-- Descripción para SEO -->
+
+  <!-- Vincula los estilos externos -->
+  <link rel="stylesheet" href="styles.css"> <!-- Carga el archivo CSS con todo el estilo -->
+</head>
+
+<body> <!-- Comienza el contenido visible de la página -->
+
+  <!-- ======= Encabezado con navegación ======= -->
+  <header class="site-header"> <!-- Encabezado fijo superior -->
+    <div class="wrap"> <!-- Contenedor central con ancho máximo -->
+      <nav class="nav"> <!-- Barra de navegación -->
+        <div class="logo">Tema Social</div> <!-- Logotipo / texto de marca -->
+        <div class="menu"> <!-- Contenedor de enlaces del menú -->
+          <!-- Enlaces internos que hacen scroll a las secciones -->
+          <a href="#inicio">Inicio</a>
+          <a href="#ofimatica">Ofimática</a>
+          <a href="#informatica">Informática</a>
+          <a href="#practicas">Prácticas</a>
+          <a href="#soporte">Soporte</a>
+          <a href="#precios">Precios</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap"> <!-- Contenido principal dentro de un contenedor central -->
+    <!-- ======= Sección: Hero / Inicio ======= -->
+    <section id="inicio" class="section hero"> <!-- Ancla “inicio” para el menú -->
+      <h1>Inclusión Digital para escuelas y familias</h1> <!-- Título principal -->
+      <p>Recursos de <strong>ofimática</strong> e <strong>informática</strong> aplicados al
+         <strong>soporte técnico</strong> con prácticas reales y planes de servicio accesibles.</p>
+      <!-- Botón que abrirá el formulario. 
+           Dejo el href real (funciona solo), y además lo manejo por JS para evitar bloqueos. -->
+      <a
+  id="openFormBtn"
+  class="btn"
+  href="https://docs.google.com/forms/d/e/1FAIpQLSfIaQRCAwAU8hvLeYBQ8WoM90BV_VAMUNymgc1t_6MhM5P5AQ/viewform?usp=header"
+  target="_blank"
+  rel="noopener noreferrer"
+>Abrir formulario</a>
+      </a>
+    </section>
+
+    <!-- ======= Ofimática ======= -->
+    <section id="ofimatica" class="section">
+      <h2>Ofimática</h2>
+      <div class="grid grid-3"> <!-- Grilla de 3 columnas en pantallas grandes -->
+        <article class="card"><h3>Word</h3><p>Estilos, índices, tablas y referencias.</p></article>
+        <article class="card"><h3>Excel</h3><p>Funciones, tablas dinámicas y gráficos.</p></article>
+        <article class="card"><h3>PowerPoint</h3><p>Diseño, tipografías y buenas prácticas.</p></article>
+      </div>
+    </section>
+
+    <!-- ======= Informática ======= -->
+    <section id="informatica" class="section">
+      <h2>Informática</h2>
+      <div class="grid grid-3">
+        <article class="card"><h3>Hardware</h3><p>Limpieza, RAM/SSD, drivers.</p></article>
+        <article class="card"><h3>Redes</h3><p>UTP Cat6, RJ45 T568B, pruebas de red.</p></article>
+        <article class="card"><h3>Seguridad</h3><p>Contraseñas, 2FA, backups y antivirus.</p></article>
+      </div>
+    </section>
+
+    <!-- ======= Prácticas ======= -->
+    <section id="practicas" class="section">
+      <h2>Prácticas</h2>
+      <article class="card">
+        <p><strong>Flujo:</strong> relevamiento → diagnóstico → plan → ejecución → verificación.</p>
+        <p><strong>Checklist:</strong> inventario, fotos, pruebas de red, informe final.</p>
+      </article>
+    </section>
+
+    <!-- ======= Soporte ======= -->
+    <section id="soporte" class="section">
+      <h2>Servicios de Soporte Técnico</h2>
+      <div class="grid grid-2"> <!-- Grilla de 2 columnas -->
+        <article class="card"><h3>Instalación & Optimización</h3><p>SO limpio, drivers y suite ofimática.</p></article>
+        <article class="card"><h3>Redes Pequeñas</h3><p>Router, cableado, pruebas y cobertura Wi-Fi.</p></article>
+      </div>
+    </section>
+
+    <!-- ======= Precios ======= -->
+    <section id="precios" class="section">
+      <h2>Precios</h2>
+      <table class="table"> <!-- Tabla simple con tres planes -->
+        <thead><tr><th>Plan</th><th>Incluye</th><th>Precio (ARS)</th></tr></thead>
+        <tbody>
+          <tr><td>Básico</td><td>Diagnóstico + limpieza + optimización</td><td>12.000</td></tr>
+          <tr><td>Red Hogar</td><td>Router + mapeo Wi-Fi + 2 equipos</td><td>18.000</td></tr>
+          <tr><td>PyME</td><td>1 NAS/servidor + 5 puestos + backup inicial</td><td>35.000</td></tr>
+        </tbody>
+      </table>
+      <p class="note">*Valores orientativos. Consultar combos educativos y abonos mensuales.</p>
+    </section>
+
+    <!-- ======= Contacto ======= -->
+    <section id="contacto" class="section">
+      <h2>Contacto</h2>
+      <article class="card">
+        <p>Dejanos tu consulta a través del formulario:</p>
+        <!-- Segundo botón al mismo formulario como respaldo -->
+        <a
+          id="openFormBtn2"
+          class="btn"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfIaQRCAwAU8hvLeYBQ8WoM90BV_VAMUNymgc1t_6MhM5P5AQ/viewform?usp=header"
+          data-url="https://docs.google.com/forms/d/e/1FAIpQLSfIaQRCAwAU8hvLeYBQ8WoM90BV_VAMUNymgc1t_6MhM5P5AQ/viewform?usp=header"
+          target="_blank"
+          rel="noopener noreferrer">
+          Abrir formulario
+        </a>
+      </article>
+    </section>
+  </main>
+
+  <!-- ======= Pie de página ======= -->
+  <footer class="site-footer"> <!-- Información final / créditos -->
+    <div class="wrap">© 2025 – Proyecto Inclusión Digital</div> <!-- Texto del pie -->
+  </footer>
+
+  <!-- Carga del JavaScript; 'defer' asegura que se ejecute tras parsear el HTML -->
+  <script defer src="app.js"></script> <!-- Lógica de enlaces, scroll suave, etc. -->
+</body>
+</html>
